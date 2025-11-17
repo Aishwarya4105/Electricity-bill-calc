@@ -168,6 +168,9 @@ hr {
     .container {
         display: block;
     }
+    .container h1{
+        font-size: 20px;
+    }
 
     .container img {
         display: block;
