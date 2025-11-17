@@ -202,12 +202,9 @@ hr {
     }
 
     .img-content p {
-        display: flex;
-        align-items: flex-start;
-        flex: 1;
-        margin: 0;
-        line-height: 1.5;
-        padding-top: 15px;
+    padding-top: 15px;
+        text-align: left;
+        
     }
 
     #tip-H {
