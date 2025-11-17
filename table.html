@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .H {
+            height: 30px;
+            width: 925px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin: 0;
+            text-align: center;
+        }
+
+        table {
+            width: 67%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            border-collapse: collapse;
+            border: none;
+            margin-bottom: 100px;
+        }
+
+        th {
+            background-color: #000;
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+
+
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            border: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        @media screen and (max-width:600px) {
+            .container {
+                display: block;
+                margin: 0;
+            }
+
+            .H {
+                width: 100%;
+                display: block;
+                height: 30px;
+                max-width: 500px;
+                background-color: black;
+                color: white;
+                margin: 0;
+                text-align: center;
+            }
+
+
+            table {
+                width: 67%;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+                border-collapse: collapse;
+                border: none;
+                margin: 25px auto;
+
+            }
+
+            th {
+                background-color: #000;
+                color: white;
+                padding: 12px;
+                font-weight: 600;
+
+
+            }
+
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+                border: none;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div>
+        <div class="container">
+            <h1>Electricity Unit Per Rate Table</h1>
+            <p>Our detailed electricity unit per rate table breaks down the cost per unit of electricity.This table is a
+                valuable resouce to see how much you're paying for each unit and identify opportunities for savings.</p>
+            <div class="H">Consumption up to 500 units</div>
+            <table>
+                <tr>
+                    <th>units</th>
+                    <th>cost</th>
+                </tr>
+                <tr>
+                    <td>0-100</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>101-200</td>
+                    <td>2.25</td>
+                </tr>
+                <tr>
+                    <td>201-400</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>401-500</td>
+                    <td>6</td>
+                </tr>
+
+            </table>
+            <div class="H">Consumption above 500units</div>
+            <table>
+                <tr>
+                    <th>units</th>
+                    <th>cost</th>
+                </tr>
+                <tr>
+                    <td>0-100</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>101-400</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>401-500</td>
+                    <td>6.00</td>
+                </tr>
+                <tr>
+                    <td>501-600</td>
+                    <td>8.00</td>
+                </tr>
+                <tr>
+                    <td>601-800</td>
+                    <td>9.00</td>
+                </tr>
+                <tr>
+                    <td>801-1000</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Above 1000 units</td>
+                    <td>11</td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="E-calc.js"></script>
+
+
+</body>
+
+</html>

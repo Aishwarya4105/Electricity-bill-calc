@@ -1,0 +1,260 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: white;
+    height: 100vh;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation li {
+    display: inline;
+    list-style-type: none;
+    padding: 50px;
+
+
+
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navigation li:hover {
+    color: rgb(159, 210, 232);
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px;
+    height: 75%;
+}
+
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding-left: 100px;
+
+
+}
+
+.img-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 60px;
+
+}
+
+.img-content img {
+    width: 250px;
+    height: auto;
+    padding: 5px;
+}
+
+.img-content p {
+    flex: 1;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#tip-H {
+    height: 65px;
+    background-color: rgb(140, 152, 152);
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.Bones-Tip {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+     background-color: rgb(238, 252, 252);
+}
+.Bones-Tip img{
+    margin: 50px  auto;
+}
+
+#B-container {
+    width: 65%;
+    height: 350px;
+   
+}
+
+#S-container {
+    text-align: center;
+    padding: 100px 50px;
+    background-color: aliceblue;
+
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 250px;
+    padding-right: 150px;
+    background-color: rgb(231, 240, 240);
+    height: 200px;
+    align-items: center;
+}
+
+.footer h4 {
+    text-align: center;
+}
+
+.footer {
+    position: static;
+}
+
+@media(max-width:400px) {
+   
+.navigation {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-ul{
+    display:flex;
+    flex-direction: row;
+    gap:1px;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}
+
+
+#nav-ul li {
+    padding: 0;
+  
+}
+
+#nav-ul li  a {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+.navigation img{
+    width:30px;
+    height: 30px;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+
+    .container {
+        display: block;
+    }
+
+    .container img {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .tips-container {
+      
+        display: block;
+        padding-left: 0;
+
+    }
+
+    .img-content {
+       display: block;
+        margin: 0 auto;
+        padding: 20px;
+
+    }
+
+    .img-content img {
+        display: flex;
+        align-items: flex-end;
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .img-content p {
+        display: flex;
+        align-items: flex-start;
+        flex: 1;
+        margin: 0;
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+
+    #tip-H {
+        height:80px;
+        font-size: 15px;
+       
+    }
+
+    .Bones-Tip {
+        display: block;
+        gap: 10px;
+    }
+
+    .Bones-Tip img {
+        display: block;
+        height: 150px;
+    }
+
+    #B-container {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(238, 252, 252);
+    }
+
+    #S-container {
+        text-align: center;
+        padding: 100px 50px;
+        background-color: aliceblue;
+
+    }
+
+    .footer-div {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: rgb(231, 240, 240);
+        height: 300px;
+    }
+
+    .footer-div img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer h4 ,p{
+        text-align: center;
+    }
+
+    .footer {
+        position: static;
+    }
+    
+}

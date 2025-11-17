@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #container-1 {
+            text-align: center;
+            padding: 50px;
+        }
+
+        #container-2 {
+            display: flex;
+            height: 300px;
+            width: 500px;
+            background-color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(20, 18, 18, 0.6);
+            background: linear-gradient(135deg, #6eb98a, white);
+
+
+
+        }
+
+        input {
+            width: 400px;
+            padding: 5px;
+            margin: 10px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 415px;
+            padding: 5px;
+            margin: 10px;
+            background-color: aliceblue;
+            border: none;
+            border-radius: 6px;
+
+        }
+
+        #btn-1 {
+            background-color: rgb(145, 214, 188);
+            color: aliceblue;
+        }
+
+        #btn-1:hover {
+            background-color: rgb(182, 220, 205);
+        }
+
+        @media screen and (max-width:600px) {
+
+            #container-1 {
+                text-align: center;
+                padding: 5px;
+            }
+
+            #container-2 {
+                width: 90%;
+                height: 300px;
+                max-width: 350px;
+                margin: 0 auto;
+                padding: 0;
+                box-sizing: border-box;
+
+
+
+            }
+
+            input {
+                width: 90%;
+                max-width: 325px;
+                padding: 5px;
+                margin: 5px;
+                border: none;
+                border-radius: 6px;
+            }
+
+            button {
+                width: 90%;
+                max-width: 335px;
+                padding: 5px;
+                margin: 10px;
+                background-color: aliceblue;
+                border: none;
+                border-radius: 6px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div>
+        <div class="container">
+            <div id="container-1">
+                <h1>Electricity Bill Calculator</h1>
+                <p>Use our interactive electricity bill calculator to get an accurate estimate of your monthly
+                    electricity costs.Simply input your usage details,and our calculator will do rest.This tool helps
+                    you understand where your money is going and how you can start saving.</p>
+            </div>
+            <div id="container-2">
+                <h2>EB Calculator</h2>
+                <input type="number" id="previous-reading" placeholder="Previous Reading" required>
+                <input type="number" id="current-reading" placeholder="Current  Reading" required>
+                <button id="btn1">Calculate</button>
+                <button id="btn2">Clear</button>
+                <input id="bill" readonly style="display: none;">
+
+            </div>
+            <div>
+                <h2>Guidelines</h2>
+                <ul>
+                    <li>Put last month's reading as the Previous reading.</li>
+                    <li>Check the current reading on your meter and put it in the current reading.</li>
+                    <li>This will only calculate for home use.</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script src="E-calc.js"></script>
+
+
+</body>
+
+</html>
